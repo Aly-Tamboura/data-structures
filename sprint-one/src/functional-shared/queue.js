@@ -27,5 +27,5 @@ queueMethods.dequeue = function() {
   delete this.storage[this.currHead];
   this.currHead++;
   this.count && this.count--;
-  return item
+  return item;
 };
