@@ -13,7 +13,7 @@ var Queue = function() {
 
 var queueMethods = {
   size: function() {
-   return this.count;
+    return this.count;
   },
   enqueue: function(val) {
     this.storage[this.head] = val;
