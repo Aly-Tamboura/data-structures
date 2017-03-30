@@ -22,6 +22,7 @@ var LinkedList = function() {
   };
 
   list.contains = function(target) {
+  // <<<< study later >>>>
   // var node = this.head;
   // // console.log(node)
   // if( node.value === target ) {
@@ -31,7 +32,6 @@ var LinkedList = function() {
   //   console.log('found more nodes', node.next);
   //   console.log(contains(target));
   // }
-
   var startingNode = this.head;
 
   while(startingNode !== null){
