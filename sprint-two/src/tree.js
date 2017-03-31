@@ -17,14 +17,14 @@ treeMethods.addChild = function(value) {
 
 treeMethods.contains = function(target) {
   if (this.value === target) {
-  	return true;
+    return true;
   } else {
-  	for (var i = 0; i < this.children.length; i++) {
-	  var child = this.children[i];
-	  if (child.contains(target)) {
-	  	return true;
-	  }
-  	}
+    for (var i = 0; i < this.children.length; i++) {
+      var child = this.children[i];
+      if (child.contains(target)) {
+        return true;
+      }
+    }
   }
   return false;
 };

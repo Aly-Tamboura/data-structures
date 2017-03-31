@@ -5,7 +5,7 @@ var LinkedList = function() {
 
   list.addToTail = function(value) {
     var node = new Node(value);
-    if(this.head === null && this.tail === null){
+    if (this.head === null && this.tail === null) {
       this.head = node;
       this.tail = node;
     } else {
@@ -32,16 +32,15 @@ var LinkedList = function() {
   //   console.log('found more nodes', node.next);
   //   console.log(contains(target));
   // }
-  var startingNode = this.head;
+    var startingNode = this.head;
 
-  while(startingNode !== null){
-    console.log(startingNode);
-    if (startingNode.value === target){
-      return true;
+    while (startingNode !== null) {
+      if (startingNode.value === target) {
+        return true;
+      }
+      startingNode = startingNode.next;
     }
-    startingNode = startingNode.next;
-  }
-  return false;
+    return false;
   };
 
   return list;
