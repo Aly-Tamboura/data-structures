@@ -38,7 +38,6 @@ HashTable.prototype.retrieve = function(k) {
 HashTable.prototype.remove = function(k) {
   var index = getIndexBelowMaxForKey(k, this._limit);
   var bucket = this._storage.get(index);
-  console.log(bucket);
   _.each(bucket, function(tupal, i) {
     if (tupal[0] === k) {
       bucket.splice(0, 1);
