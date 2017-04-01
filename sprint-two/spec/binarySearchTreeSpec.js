@@ -25,7 +25,6 @@ describe('binarySearchTree', function() {
     binarySearchTree.insert(3);
     binarySearchTree.insert(7);
     expect(binarySearchTree.contains(7)).to.equal(true);
-    console.log(binarySearchTree)
     expect(binarySearchTree.contains(8)).to.equal(false);
   });
 
